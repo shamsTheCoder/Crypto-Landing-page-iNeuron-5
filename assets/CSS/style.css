@@ -1,0 +1,19 @@
+:root {
+    --sky-blue: #5955b3;
+    --dark-blue: #3c3797;
+    --dark-light: #7c7878;
+    --black: #151515;
+    --white: #ffffff;
+    --indigo-blue: #3c2f60;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+}
