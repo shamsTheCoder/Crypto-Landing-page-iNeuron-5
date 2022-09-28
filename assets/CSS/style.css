@@ -1,10 +1,9 @@
 :root {
-    --sky-blue: #5955b3;
-    --dark-blue: #3c3797;
-    --dark-light: #7c7878;
-    --black: #151515;
-    --white: #ffffff;
-    --indigo-blue: #3c2f60;
+    --magenta: #ba0cc5;
+    --dark-magenta: #5e0c64;
+    --white: #fbfbfb;
+    --black: #000000;
+
 }
 
 * {
@@ -15,5 +14,102 @@
 }
 
 body {
+    background-image: url('../img/pexels-irina-iriser-1366957.jpg');
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+.navbar {
     display: flex;
+    flex-direction: row;
+    background-color: var(--black);
+    padding: 10px 0px;
+    height: 4rem;
+}
+
+.navbar .logo {
+    margin-left: 80px;
+    margin-top: 5px;
+}
+
+.navbar .logo img {
+    width: 100px;
+}
+
+.navbar nav {
+    margin-left: 160px;
+    margin-top: 13px;
+
+}
+
+.navbar nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 45px;
+}
+
+.navbar nav ul li a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.navbar .nav-btn {
+    position: absolute;
+    right: 80px;
+}
+
+.navbar .nav-btn button {
+    background-color: var(--magenta);
+    color: var(--white);
+    font-size: 16px;
+    padding: 8px 30px;
+    border-radius: 10px;
+    margin-top: 3px;
+}
+
+.navbar .nav-btn button:hover {
+    cursor: pointer;
+    background-color: var(--dark-magenta);
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    color: var(--white);
+}
+
+.hero-section .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+.hero-section .title h1 {
+    font-size: 5rem;
+}
+
+.hero-section p{
+    font-size: 26px;
+    margin-top: 30px;    
+}
+
+.hero-section button{
+    padding: 8px 20px;
+    margin-top: 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--magenta);
+    color: var(--white);
+}
+
+.hero-section button:hover{
+    cursor: pointer;
+    background-color: var(--dark-magenta);
 }
