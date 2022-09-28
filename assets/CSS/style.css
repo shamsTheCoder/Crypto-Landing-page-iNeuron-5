@@ -14,7 +14,8 @@
 }
 
 body {
-    background-image: url('../img/pexels-irina-iriser-1366957.jpg');
+    background-image: url('');
+    background:linear-gradient(0deg, rgba(71, 6, 44, 0.5),rgba(21, 21, 21, 0.5)), url('../img/guerrillabuzz-crypto-pr-q5RLqtjHnm0-unsplash.jpg');
     background-size: cover;
     height: 100vh;
     background-repeat: no-repeat;
