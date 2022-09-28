@@ -3,7 +3,7 @@
     --dark-magenta: #5e0c64;
     --white: #fbfbfb;
     --black: #000000;
-
+    --transparent-color: 186,12,197,255;
 }
 
 * {
@@ -15,7 +15,7 @@
 
 body {
     background-image: url('');
-    background:linear-gradient(0deg, rgba(55, 7, 36, 0.5),rgba(21, 21, 21, 0.8)), url('../img/eth.jpg');
+    background: linear-gradient(0deg, rgba(55, 7, 36, 0.5), rgba(21, 21, 21, 0.8)), url('../img/eth.jpg');
     background-size: cover;
     height: 100vh;
     background-repeat: no-repeat;
@@ -30,7 +30,7 @@ body {
 }
 
 .navbar .logo {
-    margin-left: 80px;
+    margin-left: 100px;
     margin-top: 5px;
 }
 
@@ -38,16 +38,35 @@ body {
     width: 100px;
 }
 
-.navbar nav {
-    margin-left: 160px;
-    margin-top: 13px;
+.navbar .logo::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 270px;
+    height: 2.7rem;
+    border-right: 2px solid #fbfbfb;
+}
 
+.navbar nav {
+    margin-left: 100px;
+    margin-top: 13px;
 }
 
 .navbar nav ul li {
     display: inline-block;
     list-style: none;
     margin-left: 45px;
+}
+
+.arrow {
+    border: solid var(--white);
+    border-width: 0 2.5px 2.5px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-bottom: 2px;
+    margin-left: 2px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
 }
 
 .navbar nav ul li a {
@@ -57,7 +76,7 @@ body {
 
 .navbar .nav-btn {
     position: absolute;
-    right: 80px;
+    right: 100px;
 }
 
 .navbar .nav-btn button {
@@ -95,12 +114,12 @@ body {
     font-size: 5rem;
 }
 
-.hero-section p{
+.hero-section p {
     font-size: 26px;
-    margin-top: 30px;    
+    margin-top: 30px;
 }
 
-.hero-section button{
+.hero-section button {
     padding: 8px 20px;
     margin-top: 30px;
     font-size: 20px;
@@ -110,7 +129,38 @@ body {
     color: var(--white);
 }
 
-.hero-section button:hover{
+.hero-section button:hover {
     cursor: pointer;
     background-color: var(--dark-magenta);
+}
+
+.navbar nav .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.navbar nav .dropdown-content li{
+    margin: 2px 10px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: var(--white);
+    background-color: rgba(31, 30, 31, 0.5);
+    font-size: 16px;
+    width: 115px;
+}
+
+.navbar nav .dropdown-content li:hover{
+    background-color: var(--dark-magenta);
+    cursor: pointer;
+}
+
+.navbar nav .dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    background-color: transparent;
 }
