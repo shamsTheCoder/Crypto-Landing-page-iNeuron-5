@@ -15,7 +15,7 @@
 
 body {
     background-image: url('');
-    background:linear-gradient(0deg, rgba(71, 6, 44, 0.5),rgba(21, 21, 21, 0.5)), url('../img/guerrillabuzz-crypto-pr-q5RLqtjHnm0-unsplash.jpg');
+    background:linear-gradient(0deg, rgba(55, 7, 36, 0.5),rgba(21, 21, 21, 0.8)), url('../img/eth.jpg');
     background-size: cover;
     height: 100vh;
     background-repeat: no-repeat;
